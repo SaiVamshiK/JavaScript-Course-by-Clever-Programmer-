@@ -60,3 +60,27 @@ Math.random()*100 : gives you number between 0 and 100
     // == checks for equality
     // === checks for equality and data type
 */
+
+
+/*
+
+        // Functions
+
+    function sayMyName(a){
+        // Using template literals
+        console.log(`Hello ${a}, Nice to meet you`)
+        console.log("Hello "+a);
+    }
+
+    let sayMyName1 = (a) => {
+        console.log(`Hello again ${a}, Nice to meet you`)
+    }
+
+    sayMyName("vamshi")
+    sayMyName1("sai")
+
+    let sum1 = (a,b) => a+b;
+
+    console.log("Sum using Implicit return of arrow functions: "+sum1(1,4))
+*/
+
