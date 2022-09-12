@@ -47,3 +47,16 @@ Random - gives you number between 0 and 1
 Math.random() : gives you number between 0 and 1
 Math.random()*100 : gives you number between 0 and 100
 */
+
+
+/*
+    // Conditionals in JS
+    let weather = prompt("What is the weather like?");
+    if(weather == 'rainy'){
+        console.log("Wear an umbrella");
+    }else{
+        console.log("Wear sun glasses");
+    }
+    // == checks for equality
+    // === checks for equality and data type
+*/
