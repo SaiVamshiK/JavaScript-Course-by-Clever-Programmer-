@@ -84,3 +84,14 @@ Math.random()*100 : gives you number between 0 and 100
     console.log("Sum using Implicit return of arrow functions: "+sum1(1,4))
 */
 
+
+// Arrays
+const groceries = ["apple","banana","orange"]
+console.log(groceries)
+console.log("Element 0: "+groceries[0])
+groceries.push("cookie")
+console.log("After addition: "+groceries)
+console.log("Slice of (0,2): "+groceries.slice(0,2))
+console.log("Slice of (2,last(arr.length)): "+groceries.slice(2,groceries.length))
+console.log("Index of cookie: "+groceries.indexOf("cookie"))
+console.log("Index of mango: "+groceries.indexOf("mango"))
