@@ -149,3 +149,36 @@ const func1 = (fullName,age,assests,debt) => {
 func1("Sai vamshi",10,1000,20)
 */
 
+
+/*
+
+const groceries = ['apple','banana','mango','orange']
+for(let i = 0;i < groceries.length;i++){
+    console.log(groceries[i])
+}
+
+console.log("New Way of printing using of: ")
+for(let grocery of groceries){
+    console.log(grocery)
+}
+
+console.log("Other way of printing using in:")
+for(let grocery in groceries){
+    console.log(groceries[grocery])
+}
+
+function squareAll(arr){
+    const newArr = [];
+    for(let num of arr){
+        newArr.push(num**2)
+    }
+    return newArr
+}
+arr = [1,2,3,4]
+console.log(squareAll(arr))
+
+*/
+
+
+
+
