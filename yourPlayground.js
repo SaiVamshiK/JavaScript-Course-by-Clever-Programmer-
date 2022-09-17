@@ -98,3 +98,54 @@ console.log("Index of cookie: "+groceries.indexOf("cookie"))
 console.log("Index of mango: "+groceries.indexOf("mango"))
 */
 
+
+/*
+
+
+person = {
+    fullName : "Sai Vamshi",
+    age : 10
+}
+console.log("Name: "+person.fullName);
+console.log("Age: "+person.age);
+
+console.log("using [] for printing: "+person["fullName"])
+
+person.phone = "09843438743"
+console.log(person)
+console.log("Phone: "+person.phone)
+person["Address"] = "Hyd"
+console.log(person)
+
+cricketer = {
+    Name : "Dhoni",
+    number : 7
+}
+console.log("Name is: "+cricketer["Name"])
+
+const func = (fullName,age) => {
+    person = {
+        fullName : fullName,
+        age : age
+    }
+    return `Hi my name is ${person["fullName"]} and my age is ${person.age}`
+}
+console.log(func("Vamshi",10))
+
+
+
+const func1 = (fullName,age,assests,debt) => {
+    person = {
+        fullName : fullName,
+        age : age,
+        assests : assests,
+        debt : debt,
+        netWorth : function (){
+            return this.assests - this.debt
+        }
+    }
+    console.log("Networth of person is: "+person.netWorth())
+}
+func1("Sai vamshi",10,1000,20)
+*/
+
