@@ -179,6 +179,112 @@ console.log(squareAll(arr))
 
 */
 
+/*
+    
+const addAll = (arr) => {
+    let sum = 0;
+    for(let num of arr){
+        sum += num;
+    }
+    return sum;
+}
+
+console.log("Sum of array: "+addAll([1,2,3,4,5]))
+
+
+const findMax = (arr) => {
+    let maxVal = arr[0];
+    for(let num of arr){
+        if(maxVal < num){
+            maxVal = num;
+        }
+    }
+    return maxVal;
+}
+
+console.log("Max of array: "+findMax([1,2,3,4,5]))
+
+const func = (sentence) => {
+    let result = {}
+    for(let ch of sentence){
+        if(result[ch] == 1){
+            result[ch]++;
+        }else{
+            result[ch] = 1
+        }
+    }
+    return result
+}
+console.log(func("aabbccddd abab"))
+console.log("Other way:")
+
+const func1 = (sentence) => {
+    let result = {}
+    for(let ch of sentence){
+        if(ch in result){
+            result[ch]++;
+        }else{
+            result[ch] = 1;
+        }
+    }
+    return result
+}
+console.log(func1("aabbccddd abab"))
+
+
+const wordFreq = (sentence) => {
+    let result = {}
+    let idx = 0
+    let word = ''
+    while(idx < sentence.length){
+        if(sentence[idx] == ' '){
+            if(word in result){
+                result[word]++;
+            }else{
+                result[word] = 1
+            }
+            idx++;
+            word = ''
+        }else{
+            word = word + sentence[idx]
+            idx++;
+        }
+    }
+    if(word !== ''){
+        if(word in result){
+            result[word]++;
+        }else{
+            result[word] = 1
+        }
+    }
+    return result
+}
+console.log(wordFreq("hi hello hi hi hello hey"))
+
+
+const wordFreq1 = (sentence) => {
+    let words = sentence.split(' ')
+    let result = {}
+    for(let word of words){
+        if(word in result){
+            result[word]++;
+        }else{
+            result[word] = 1;
+            
+        }
+    }
+    return result;
+}
+
+console.log(wordFreq1("hi hello hi hi hello hey"))
+
+
+const userInput = prompt("Enter sentence")
+console.log(wordFreq1(userInput))
+
+*/
+
+
 
 
 
