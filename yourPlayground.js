@@ -285,6 +285,84 @@ console.log(wordFreq1(userInput))
 */
 
 
+/*
+
+// Higher Order functions 
+// map returns an array
+let a = [1,2,3,4]
+function doubleNums(x){
+    return x*2;
+}
+
+let doubleArray = a.map(doubleNums)
+console.log(doubleArray)
+
+console.log("Other way:\n")
+let doubleArray1 = a.map((x) => {
+    return 2*x
+})
+console.log(doubleArray1)
+
+console.log("Other way:\n")
+let doubleArray2 = a.map((x) => (2*x))
+console.log(doubleArray2)
+
+console.log("Filter\n")
+let b = [1,2,3,4,5,6]
+function odd(x){
+    if(x%2 != 0){
+        return true
+    }
+    return false
+}
+const oddVals = b.filter(odd)
+console.log(oddVals)
+
+console.log("Other way:\n")
+const oddVals1 = b.filter((x) => {
+    if(x%2 !=0){
+        return true
+    }
+    return false
+})
+
+console.log(oddVals1)
+
+console.log("Other way:\n")
+const oddVals2 = b.filter((x) => x%2)
+
+console.log(oddVals2)
+
+console.log("Reduce\n")
+
+let arr = [1,3,4,5]
+function sum(acc,cur){
+    acc += cur;
+    return acc
+}
+
+let sumArr = arr.reduce(sum)
+console.log(sumArr)
+
+console.log("Other way:\n")
+let sumArr1 = arr.reduce((acc,cur) =>{
+    acc += cur
+    return acc
+},0)
+
+console.log(sumArr1)
+
+let maxArr = arr.reduce((acc,cur) =>{
+    if(acc < cur){
+        acc = cur;
+    }
+    return acc;
+},arr[0])
+
+console.log(maxArr)
+
+*/
+
 
 
 
