@@ -439,4 +439,23 @@ console.log("Modified background color: "+nameElement.style.backgroundColor)
 
 */
 
+/*
+
+let redDiv = document.getElementById("redSquare");
+let blueDiv = document.getElementById("blueSquare");
+let blackDiv = document.getElementById("blackSquare");
+
+redDiv.onclick = function(){
+    console.log("Red clicked")
+}
+
+blueDiv.onclick = () => {
+    console.log("Blue clicked")
+}
+
+blackDiv.onclick = function() {
+    console.log("black clicked")
+}
+
+*/
 
