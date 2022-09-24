@@ -3,20 +3,21 @@ function findRandom(arr){
     let randomIdx = Math.floor(Math.random()*arr.length)
     return arr[randomIdx]
 }
-
 let arr = ["dhoni","virat","rohit","rahul"]
 console.log(findRandom(arr))
-
 */
 
 
 
 let myScore = 0;
+let computerScore = 0;
 let allBtns = document.querySelectorAll('.rpsButton')
 let playerScoreDiv = document.getElementById('player-score')
+let computerScoreDiv = document.getElementById('computer-score')
 let handsDiv = document.getElementById('hands')
 let resultsDiv = document.getElementById('result')
 let clearBtn = document.getElementById('endGameButton')
+
 
 let computerOptions = ['Rock','Paper','Scissors']
 function selectRandom(arr){
@@ -67,22 +68,28 @@ for(let btn of allBtns){
         if(result === 1){
             resultsDiv.innerHTML = 'You Win'
             myScore++;
-            playerScoreDiv.innerText = myScore
+            computerScore--;
+            playerScoreDiv.innerText = `Your Score: ${myScore}`
+            computerScoreDiv.innerText = `Computer Score: ${computerScore}`
         }else if(result === -1){
             resultsDiv.innerHTML = 'You Lose'
             myScore--;
-            playerScoreDiv.innerText = myScore
+            computerScore++;
+            playerScoreDiv.innerText = `Your Score: ${myScore}`
+            computerScoreDiv.innerText = `Computer Score: ${computerScore}`
         }else{
             resultsDiv.innerHTML = 'Its a tie'
-            playerScoreDiv.innerText = myScore
+            playerScoreDiv.innerText = `Your Score: ${myScore}`
+            computerScoreDiv.innerText = `Computer Score: ${computerScore}`
         }
     }
 }
 
 clearBtn.onclick = () => {
     myScore = 0;
+    computerScore = 0
     resultsDiv.innerHTML = ''
     handsDiv.innerText = ''
     playerScoreDiv.innerText = ''
+    computerScoreDiv.innerText = ''
 }
-
