@@ -411,9 +411,32 @@ console.log(filterByAge)
 
 */
 
+/*
+console.log("hello from yourPlayground.js")
 
+let title = document.getElementById("projectTitle");
+console.log("Previous title: "+title.innerHTML)
+title.innerHTML = "Modified new title"
+console.log("Previous new title: "+title.innerHTML)
 
+let subTitle = document.getElementById("subTitle");
+console.log("Previous Sub title: "+subTitle.innerText)
 
+subTitle.innerHTML = `<h3>Modified Sub title</h3>`
+console.log("Modified Sub title: "+subTitle.innerText)
+// innerHTML will be replacing all the html inside the div "subTitle" with what we have given
+let nameVal = prompt('Enter Name: ')
+let nameElement = document.getElementById("name");
+nameElement.innerText = nameVal;
 
+console.log("Previous Color: "+nameElement.style.color)
+nameElement.style.color = 'red'
+console.log("Modified Color: "+nameElement.style.color)
+
+console.log("Previous background color: "+nameElement.style.backgroundColor)
+nameElement.style.backgroundColor = 'pink'
+console.log("Modified background color: "+nameElement.style.backgroundColor)
+
+*/
 
 

@@ -252,7 +252,7 @@ const howManyLetters = (phrase) => {
 // result = 3
 // result = 6
 // result = 10
-
+// console.log("hello from playground.js")
 const sumArray = (numbers) => {
   let result = 0;
   // for loop
