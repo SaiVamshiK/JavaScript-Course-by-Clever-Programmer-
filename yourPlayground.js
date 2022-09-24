@@ -459,3 +459,27 @@ blackDiv.onclick = function() {
 
 */
 
+/*
+
+let allButtons = document.getElementsByClassName("buttonClick");
+
+for(let button of allButtons){
+    if(button.style.backgroundColor === 'red'){
+        button.onclick = () =>{
+            console.log("red button click")
+        }
+    }else if(button.style.backgroundColor === 'black'){
+        button.onclick = () => {
+            console.log("black button click")
+        }
+    }else if(button.style.backgroundColor === 'blue'){
+        button.onclick = () => {
+            console.log("blue button click")
+        }   
+    }
+    
+}
+
+
+*/
+
