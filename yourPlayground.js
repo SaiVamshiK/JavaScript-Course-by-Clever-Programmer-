@@ -363,6 +363,57 @@ console.log(maxArr)
 
 */
 
+/*
+
+// Execises
+let a = [1,2,3,4,5,6]
+let filterArr = a.filter((x) =>{
+    if(x > 3){
+        return true
+    }
+    return false
+})
+console.log(filterArr)
+
+
+const users = [
+    { firstName: "Alok", lastName: "Raj", age: 23 },
+    { firstName: "Ashish", lastName: "Kumar", age: 29 },
+    { firstName: "Ankit", lastName: "Roy", age: 29 },
+    { firstName: "Pranav", lastName: "Mukherjee", age: 50 },
+];
+
+const fullNames = users.map((user) => {
+    return user.firstName + " " + user.lastName
+})
+
+console.log("Full Names: "+fullNames)
+
+const ageDict = users.reduce((acc,user) => {
+    if(user.age in acc){
+        acc[user.age]++;
+    }else{
+        acc[user.age] = 1
+    }
+    return acc
+},{})
+console.log(ageDict)
+
+const filterByAge = users.filter((user) => {
+    if(user.age < 30){
+        return true
+    }
+    return false
+}).map((user) => {
+    return user.firstName
+})
+console.log(filterByAge)
+
+*/
+
+
+
+
 
 
 
