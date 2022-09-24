@@ -483,3 +483,18 @@ for(let button of allButtons){
 
 */
 
+
+
+/*
+let allColorBtns = document.querySelectorAll(".buttonClick");
+// .buttonClick is used as it is a class otherwise querySelector would be selecting HTML elements
+for(let button of allColorBtns){
+    button.onclick = () =>{
+        console.log(button.value)
+    }
+}
+*/
+
+
+
+
