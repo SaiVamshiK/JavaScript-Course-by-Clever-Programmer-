@@ -496,5 +496,52 @@ for(let button of allColorBtns){
 */
 
 
+/*
+let redCnt = 0;
+let blueCnt = 0;
+let greenCnt = 0;
+
+let allBtns = document.querySelectorAll('.buttonClick')
+for(let btn of allBtns){
+    btn.onclick = () =>{
+        if(btn.value === 'green'){
+            greenCnt++;
+            btn.innerHTML = `${greenCnt}`;
+        }else if(btn.value === 'red'){
+            redCnt++;
+            btn.innerHTML = `${redCnt}`;
+        }else if(btn.value === 'blue'){
+            blueCnt++;
+            btn.innerHTML = `${blueCnt}`;
+        }
+    }
+}
+
+let clearGame = document.getElementById('clearGame')
+clearGame.onclick = () =>{
+    redCnt = 0;
+    blueCnt = 0;
+    greenCnt = 0;
+    for(let btn of allBtns){
+        btn.innerHTML = '0'
+    }
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
