@@ -531,11 +531,30 @@ clearGame.onclick = () =>{
 */
 
 
+/*
+const timesClicked = {
+    "red" : 0,
+    "blue" : 0,
+    "green" : 0
+}
 
+let allBtns = document.querySelectorAll('.buttonClick')
+for(let btn of allBtns){
+    btn.onclick = () => {
+        timesClicked[btn.value]++;
+        btn.innerHTML = timesClicked[btn.value]
+    }
+}
 
+let clearBtn = document.getElementById('clearGame')
+clearBtn.onclick = () => {
+    for(let btn of allBtns){
+        timesClicked[btn.value] = 0;
+        btn.innerHTML = '0'
+    }
+}
 
-
-
+*/
 
 
 
