@@ -557,7 +557,15 @@ clearBtn.onclick = () => {
 */
 
 
+let dogDiv = document.getElementById('dogImage')
 
+fetch('https://dog.ceo/api/breeds/image/random')
+.then(response => response.json())
+.then(json => {
+    console.log("JSON Object: "+json)
+    console.log("JSON Object Message: "+json.message)
+    dogDiv.innerHTML = `<img src='${json.message}' height = "400" width = "400"/>`
+})
 
 
 
