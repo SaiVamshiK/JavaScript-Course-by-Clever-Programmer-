@@ -576,6 +576,13 @@ getNewDog.onclick = () => {
 
 */
 
+console.log("Start convo with Friend")
+setTimeout(() => {
+    console.log("Soup is ready")
+},2000)
+console.log("Continue convo")
+
+// Soup is ready is printed after 2 seconds meanwhile the other code would still be running
 
 
 
