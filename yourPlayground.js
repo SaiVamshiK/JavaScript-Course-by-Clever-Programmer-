@@ -576,16 +576,51 @@ getNewDog.onclick = () => {
 
 */
 
-console.log("Start convo with Friend")
-setTimeout(() => {
-    console.log("Soup is ready")
-},2000)
-console.log("Continue convo")
+// console.log("Start convo with Friend")
+// setTimeout(() => {
+//     console.log("Soup is ready")
+// },2000)
+// console.log("Continue convo")
 
-// Soup is ready is printed after 2 seconds meanwhile the other code would still be running
+// // Soup is ready is printed after 2 seconds meanwhile the other code would still be running
 
+/*
+const promise1 = new Promise((resolve,reject) => {
+    setTimeout(() => {
+        let r = Math.floor(Math.random()*2)
+        let result = r === 1 ? true : false;
+        if(result){
+            resolve("Your soup is ready");
+        }else{
+            reject("Your soup is not ready");
+        }
+    },2000)
+})
 
+console.log(
+    promise1
+    .then((value) => {
+        console.log(value)
+    })
+    .catch((value) => {
+        console.log(value)
+    })
+)
 
+// .then catches a resolve and .catch catches the reject of the promise
+
+*/
+
+/*
+
+console.log("fetch returns a promise and response in the first then also returns a promise: ",
+    fetch('https://dog.ceo/api/breeds/image/random')
+    .then(response => response.json())
+    .then(json => console.log(json))
+)
+
+// response.json() is also making an API request to convert it into JSON data so it takes time
+*/
 
 
 
