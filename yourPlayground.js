@@ -622,5 +622,19 @@ console.log("fetch returns a promise and response in the first then also returns
 // response.json() is also making an API request to convert it into JSON data so it takes time
 */
 
+/*
+// Rules for using async/ await
+// It must be in a FUNCTION
+// Use the async keyword to tell that the function is asynchronous
+// Use await when you are waiting for the response
 
+const getRandomDog = async () => {
+    let url = 'https://dog.ceo/api/breeds/image/random'
+    const response = await fetch(url)
+    const data = await response.json()
+    console.log(data)
+}
+
+getRandomDog()
+*/
 
