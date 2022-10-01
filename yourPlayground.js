@@ -710,3 +710,26 @@ const getSum = async (a,b) => a+b
 console.log(getSum(2,3).then(response => console.log(response)))
 
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
