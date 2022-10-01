@@ -638,3 +638,43 @@ const getRandomDog = async () => {
 getRandomDog()
 */
 
+/*
+const promise1 = new Promise((resolve,reject) => {
+    setTimeout(() => {
+        let r = Math.floor(Math.random()*2)
+        let result = r === 1 ? true : false;
+        if(result){
+            resolve("Your soup is ready")
+        }else{
+            reject("Your soup is not ready")
+        }
+    },2000)
+})
+let tipForWaiter = 0;
+let soupAmount = 0;
+let review = '';
+const getSoup = async () => {
+    try{
+        const response = await promise1;
+        console.log(response)
+        tipForWaiter = 10
+        soupAmount = 100
+        review = 'Good'
+    }catch(error){
+        console.log(error)
+        review = 'Bad'
+    }
+    console.log("Review: "+review)
+}
+getSoup()  
+
+*/
+
+
+
+
+
+
+
+
+
