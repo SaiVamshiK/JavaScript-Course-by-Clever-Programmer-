@@ -671,10 +671,42 @@ getSoup()
 */
 
 
+/*
+const promise1 = new Promise((resolve,reject) => {
+    setTimeout(() => {
+        let r = Math.floor(Math.random()*2)
+        let result = r == 1 ? true : false
+        if(result){
+            resolve("Your soup is ready")
+        }else{
+            reject("Your soup is not ready")
+        }
+    },2000)
+})
 
+const getSoup = async () => {
+    try{
+        let response = await promise1
+        console.log(response)   
+        return "good rating"
+    }catch(error){
+        console.log(error)
+        return "bad rating"
+    }
+    
+}
 
+getSoup()
+.then(response => console.log(response))
+// Any async function would return a promise
+// And to extract values from a promise we need to AWAIT it or use .then()
+*/
 
+/*
 
+const getSum = async (a,b) => a+b
+// One way to print result : console.log(getSum(2,3).then(response => console.log(response)))
 
+console.log(getSum(2,3).then(response => console.log(response)))
 
-
+*/
